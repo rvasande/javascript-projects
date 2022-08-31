@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .class {
+        color: cyan;
+        background-color: black;
+      }
+      .container{
+        height: 100vh;
+        width: 100%;
+    }
+    button{
+        border: 2px solid black;
+        padding: .5rem;
+        color: white;
+        background-color:black;
+    }
+    button:hover{
+        color: black;
+        background-color: white;
+    }
+    .main{
+          text-align: center;
+        border: 2px solid black;
+        width: 50%;
+        padding: 2rem;
+        position: absolute;
+        top: 25%;
+        left: 22%;
+
+      }
+      #output{
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     <div class="main">
+        <h1 id="add">Hello World</h1><br>
+        <h4 id="output"></h4>
+        <button onclick="change()">Add Class</button>
+        <button onclick="vanish()">Remove class</button>
+        <button onclick="hasClass()">check</button>
+     </div>
+    </div>
+
+    <script>
+      function change() {
+        document.getElementById("add").classList.add("class");
+      }
+      function vanish() {
+        document.getElementById("add").classList.remove("class");
+      }
+      function hasClass(){
+        var x = document.getElementById("add").classList.contains("class");
+        // console.log(x);
+        if(x===true){
+
+          document.getElementById("output").innerHTML=`class added `;
+        }else {
+          document.getElementById("output").innerHTML=`class not added `;
+          
+        }
+      }
+    </script>
+  </body>
+</html>
