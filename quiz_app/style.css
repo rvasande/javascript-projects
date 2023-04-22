@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: #999;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background-color: #fff;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-color: #8e448e;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #732d91;
+}
+
+button:focus {
+  outline: none;
+}
